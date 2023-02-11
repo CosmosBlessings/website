@@ -80,6 +80,7 @@ html{
     height: 550px;
     justify-content: center;
     align-items: center;
+    
 }
 
 #home::before{ 
@@ -94,6 +95,8 @@ html{
     opacity:0.89;
     font-weight: bolder;
     text-decoration: solid;
+    
+
 }
 
 .motabhai{
@@ -282,4 +285,29 @@ footer{
 }
 #contacttta a img{
     padding: 0 10px;
+}
+
+#ques{
+    display: flex;
+}
+.ques1{
+    /* border: 2px solid black; */
+    border-radius: 60px 0 60px 0;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-image: url(/img/what\ all\ astra.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.ques2{
+    /* border: 2px solid black; */
+    border-radius: 60px 0 60px 0;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-image: url(/img/what\ all.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
