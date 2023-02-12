@@ -296,18 +296,23 @@ footer{
     width: 600px;
     height: 600px;
     margin: auto;
-    background-image: url(img/whatallastra.jpg) ;
+    background-image: url(/img/whatallastra.jpg) ;
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 .ques2{
+    
     /* border: 2px solid black; */
     border-radius: 60px 0 60px 0;
     width: 600px;
     height: 600px;
     margin: auto;
-    background-image: url(img/whatall.jpg) ;
-    background-repeat:no-repeat;
+    background-image: url(/img/whatall.jpg) ;
+    /* background-repeat:no-repeat; */
     background-size: cover;
+}
+
+.blank{
+    opacity: 0;
 }
