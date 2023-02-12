@@ -286,12 +286,12 @@ footer{
 #contacttta a img{
     padding: 0 10px;
 }
-
+/* 
 #ques{
     display: flex;
 }
 .ques1{
-    /* border: 2px solid black; */
+    /* border: 2px solid black; 
     border-radius: 60px 0 60px 0;
     width: 600px;
     height: 600px;
@@ -303,16 +303,35 @@ footer{
 
 .ques2{
     
-    /* border: 2px solid black; */
+    /* border: 2px solid black; 
     border-radius: 60px 0 60px 0;
     width: 600px;
     height: 600px;
     margin: auto;
     background-image: url(/img/whatall.jpg) ;
-    /* background-repeat:no-repeat; */
+    /* background-repeat:no-repeat; 
     background-size: cover;
 }
 
 .blank{
     opacity: 0;
+} */
+
+#que{
+    display: flex;
+    flex-direction: row;
+}
+.ques{
+    width: 600px;
+    height: 600px;
+    display: inline-flex;
+    /* flex-direction:unset; */
+    justify-content: center;
+    margin: auto;
+}
+
+.blank{
+    border-radius: 0 60px 0 60px;
+    margin: 10px 20px;
+
 }
