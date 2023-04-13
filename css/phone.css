@@ -87,6 +87,19 @@
 .ques1{
     margin-bottom: 20px;
 }
-.slideshow-container {
+/* .slideshow-container {
     max-width: 500px;
+} */
+
+#que{
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+
+.motabhai{
+    font-size:medium;
+    font-weight:bold;
+    text-decoration:solid;
 }
