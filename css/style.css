@@ -156,11 +156,11 @@ html{
 } 
 
 /* Clients Section */
-#client-section{ 
+#Testimonials{ 
     position: relative;
 }
 
-#client-section::before{
+#Testimonials::before{
  content: "";
  position: absolute;
  background: url('../bg.jpg');
