@@ -25,7 +25,7 @@ html{
 
 #navbar::before{
     content: "";
-    background-color: rgb(51, 92, 255);
+    /* background-color: rgb(51, 92, 255); */
     position: absolute;
     top:0px;
     left:0px;
@@ -103,12 +103,10 @@ html{
     font-size: xxx-large;
     font-weight: bolder;
     text-decoration:solid;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px black;
 }
-#home h1{
-    color:white;
-    text-align: center;
-    font-family: ' ',  ;
-}
+
 /* 
 #home p{
     color:white;
@@ -156,11 +154,11 @@ html{
 } 
 
 /* Clients Section */
-#Testimonials{ 
+#client-section{ 
     position: relative;
 }
 
-#Testimonials::before{
+#client-section::before{
  content: "";
  position: absolute;
  background: url('../bg.jpg');
@@ -188,6 +186,7 @@ html{
 /* Contact Section */
 #contact{
     position: relative;
+    margin: 2px solid black;
 }
 #contact::before{
     content: "";
@@ -211,6 +210,7 @@ html{
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
+    margin: 10px;
 } 
 
 #contact-box form{
@@ -218,9 +218,14 @@ html{
 }
 
 #contact-box label{
-   font-size: 1.3rem;
+   font-size: 2rem;
    font-family: ' ',  ;
-
+   padding: 20px 10px;
+   font-weight: bold;
+   color: white;
+   text-shadow: 2px 2px 4px black;
+   /* -webkit-text-stroke-color:black; */
+   /* -webkit-text-stroke-width:thin; */
 }
 
 
@@ -248,8 +253,8 @@ footer{
 .btn{
     padding: 7px;
     border: 2px solid white;
-    background-color: rgb(19, 157, 182);
-    color: white;
+    /* background-color: rgb(19, 157, 182); */
+    /* color: white; */
     margin: 23px;
     font-size: 1.5rem;
     border-radius: 10px;
@@ -284,14 +289,14 @@ footer{
     color: white;
     text-decoration: none;
     /* height: 100vh; */
-    padding: 20px 30%;
+    padding: 20px 33%;
     
 }
 .oneline{
     display: inline-flex;
 }
 #contacttta a img{
-    padding: 0 10px;
+    padding: 0 20px;
 }
 /* 
 #ques{
@@ -348,3 +353,54 @@ footer{
     justify-content: center;
     align-items: center;
 } 
+
+
+
+@keyframes rone {
+    0% {
+        transform: translateX(-1600px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+
+@keyframes rtwo {
+    0% {
+        transform: translateX(1600px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+.rt{ 
+animation: rone;
+animation-duration: 2s;
+}
+
+.lt{
+animation: rtwo;
+animation-duration: 3s;
+}
+
+
+.WASH1 {
+   
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration:solid;
+}
+
+.chotabhai {
+    font-size: larger;
+    font-weight:500;
+  
+}
