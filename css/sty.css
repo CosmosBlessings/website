@@ -1,0 +1,491 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color:  rgb(46, 185, 240);
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+#navbar::before{
+    content: "";
+    /* background-color: rgb(51, 92, 255); */
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -10;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 65px;
+    margin: 3px 6px;
+    border-radius: 40px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+    font-weight: bolder;
+    text-decoration: solid;
+    
+
+}
+
+.motabhai{
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-decoration:solid;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px black;
+}
+
+/* 
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: ' ',  ;
+} */
+
+#home p{
+    color: rgb(255, 255, 255);
+    font-size: xxx-large;
+    text-align: center;
+    -webkit-text-stroke: 1px  rgb(255, 255, 255) ;
+    text-shadow: 3px 3px black;
+    
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    /* border: 2px solid brown; */
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    /* background: #f2f2f2; */
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   border-radius: 23px;
+}
+
+#services .box p{
+    font-family: ' ',  ;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    margin: 2px solid black;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    margin: 10px;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 2rem;
+   font-family: ' ',  ;
+   padding: 20px 10px;
+   font-weight: bold;
+   color: white;
+   text-shadow: 2px 2px 4px black;
+   /* -webkit-text-stroke-color:black; */
+   /* -webkit-text-stroke-width:thin; */
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: ' ',  ; 
+    font-size: 3.8rem;
+    padding: 12px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.h-secondary{
+    font-family: ' ',  ;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 7px;
+    border: 2px solid white;
+    /* background-color: rgb(19, 157, 182); */
+    /* color: white; */
+    margin: 23px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    justify-content: center;
+    align-items: center;
+    font-style: none;
+}
+
+.center{
+    text-align: center;
+    padding: 18px;
+}
+#contacttta{
+    /* margin: 20px 10%; */
+    display: flex;
+    /* margin-bottom: 30px; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    width: 100%;
+    color: white;
+}
+
+.beech{
+    justify-content: center;
+    align-items: center;
+}
+
+#contacttta a{
+    color: white;
+    text-decoration: none;
+    /* height: 100vh; */
+    padding: 20px 33%;
+    
+}
+.oneline{
+    display: inline-flex;
+}
+#contacttta a img{
+    padding: 0 20px;
+}
+/* 
+#ques{
+    display: flex;
+}
+.ques1{
+    /* border: 2px solid black; 
+    border-radius: 60px 0 60px 0;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-image: url(/img/whatallastra.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.ques2{
+    
+    /* border: 2px solid black; 
+    border-radius: 60px 0 60px 0;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-image: url(/img/whatall.jpg) ;
+    /* background-repeat:no-repeat; 
+    background-size: cover;
+}
+
+.blank{
+    opacity: 0;
+} */
+
+#que{
+    display: flex;
+    flex-direction: row;
+}
+.ques{
+    width: 600px;
+    height: 600px;
+    display: inline-flex;
+    /* flex-direction:unset; */
+    justify-content: center;
+    margin: auto;
+}
+
+.blank{
+    border-radius: 0 60px 0 60px;
+    margin: 10px 20px;
+
+}
+
+ .box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+@keyframes rone {
+    0% {
+        transform: translateX(-1600px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+
+@keyframes rtwo {
+    0% {
+        transform: translateX(1600px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+.rt{ 
+animation: rone;
+animation-duration: 2s;
+}
+
+.lt{
+animation: rtwo;
+animation-duration: 3s;
+}
+
+
+.WASH1 {
+   
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration:solid;
+}
+
+.chotabhai {
+    font-size: larger;
+    font-weight:500;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* if desktop */
+.mobile_device_380px {
+    display: none;
+}
+.mobile_device_480px {
+    display: none;
+}
+
+
+/* if mobile device max width 380px */
+@media only screen and (max-device-width: 380px) {
+    .mobile_device_380px{display: block;}       
+    .desktop {display: none;}
+} 
+
+/* if mobile device max width 480px */
+@media only screen and (max-device-width: 480px) {
+   .mobile_device_480px{display: block;}
+   .desktop {display: none;}
+}
+
+
+
+blockquote {
+    font-family: Arial;
+    background-color: #F8EFBE;
+    border-left-color: #F4B514;
+  }
+  
+  #contactme {
+    background-color: black;
+    color: white;
+    height: 180px;
+  }
+  
+  
+  #navbar {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  
+  .top-nav {
+    background-color: #671100;
+  }
+  
+  .top-nav a {
+    color: #d3e316;
+  }
+  
+  h1.headingStatement {
+    font-family: Monospace;
+    font-size: 2em;
+  }
+  
+  
+  /* bootstrap override */
+  
+  a.btn-primary:hover {
+    text-decoration: none;
+  }
+  
+  .navbar-nav li a:hover {
+      background-color: #FF0000;
+      border-radius: 10px;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #cccccc;
+    border-radius: 1px;
+  }
