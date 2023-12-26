@@ -1,274 +1,160 @@
-/* CSS Reset */
-*{
-    margin: 0;
-    padding: 0;
+
+
+body{
+  /* background-color: rgb(255, 234, 116); */
+}
+.laptop-screen {
+    position: relative;
+    border: 5px double grey;
+    background-color: black;
+    padding: 3% 2%;
+    margin: 2% 8% 0% 8%;
+    border-radius: 36px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
 
-html{
-    scroll-behavior: smooth;
-    background-color:  rgb(46, 185, 240);
-}
-
-/* CSS Variables */
-:root{
-    --navbar-height: 59px;
-}
-
-/* Navigation Bar */
-#navbar{
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-}
-
-#navbar::before{
-    content: "";
-    /* background-color: rgb(51, 92, 255); */
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 100%;
-    width:100%;
-    z-index: -10;
-    opacity: 0.7;
-}
-
-/* Navigation Bar: Logo and Image */
-#logo{
-    margin: 10px 34px;
-}
-
-#logo img{
-    height: 65px;
-    margin: 3px 6px;
-    border-radius: 40px;
-}
-
-
-/* Navigation Bar: List Styling */
-
-#navbar ul{
-    display: flex;
-    /* font-family: 'Baloo Bhai', cursive; */
-}
-
-#navbar ul li{ 
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-#navbar ul li a{
-    color: white;
+.laptop-key {
+    content: '';
     display: block;
-    padding: 3px 30px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover{
-    color: black;
-    background-color: white;
-}
-
-/* Home Section */
-#home{
-    display: flex;
-    flex-direction: column;
-    padding:3px 200px;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#home::before{ 
-    content: "";
-    position: absolute;
-    background: url('../bg1.jpg') no-repeat center center/cover;
-    height: 642px;
-    top:0px;
-    left:0px;
-    width: 100%;
-    z-index: -1;
-    opacity:0.89;
-    font-weight: bolder;
-    text-decoration: solid;
-    
-
-}
-
-.motabhai{
-    font-size: xxx-large;
-    font-weight: bolder;
-    text-decoration:solid;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px black;
-}
-
-/* 
-#home p{
-    color:white;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: ' ',  ;
-} */
-
-#home p{
-    color: rgb(255, 255, 255);
-    font-size: xxx-large;
-    text-align: center;
-    -webkit-text-stroke: 1px  rgb(255, 255, 255) ;
-    text-shadow: 3px 3px black;
-    
-}
-
-/* Services Section */
-#services{
-    margin: 34px;
-    display: flex;
-}
-#services .box{ 
-    /* border: 2px solid brown; */
-    padding: 34px;
-    margin: 2px 55px;
-    border-radius: 28px;
-    /* background: #f2f2f2; */
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-#services .box img{ 
-   height: 160px;
-   margin: auto;
-   display: block;
-   border-radius: 23px;
-}
-
-#services .box p{
-    font-family: ' ',  ;
-    justify-content: center;
-    align-items: center;
-} 
-
-/* Clients Section */
-#client-section{ 
-    position: relative;
-}
-
-#client-section::before{
- content: "";
- position: absolute;
- background: url('../bg.jpg');
- width: 100%;
- height: 100%;
- z-index: -1;
- opacity: 0.3;
-}
-
-#clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.client-item{
-    padding: 34px;
-}
-
-#clients img{
-    height: 124px;
-}
-
-
-/* Contact Section */
-#contact{
-    position: relative;
-    margin: 2px solid black;
-}
-#contact::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.7;
-    background: url('../contact.jpg') no-repeat center center/cover;
-
-}
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-#contact-box input, 
-#contact-box textarea{
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 9px;
-    font-size: 1.1rem;
-    margin: 10px;
-} 
-
-#contact-box form{
-    width: 40%;
-}
-
-#contact-box label{
-   font-size: 2rem;
-   font-family: ' ',  ;
-   padding: 20px 10px;
-   font-weight: bold;
-   color: white;
-   text-shadow: 2px 2px 4px black;
-   /* -webkit-text-stroke-color:black; */
-   /* -webkit-text-stroke-width:thin; */
-}
-
-
-footer{
+    margin: 0%;
+    height: 30px;
     background: black;
+    border-radius: 6px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: 2px solid rgb(206, 202, 202);
+    filter: drop-shadow(5px 20px 6px grey);
+    margin-bottom: 5%;
+}
+
+.laptop-screen img {
+    border: 1px solid #F1FAEE;
+    border-radius: 6px;
+    width: 100%;
+    max-height: 450px !important;
+}
+
+.slider-row {
+    width: 100% !important;
+    margin-top: 2%;
+}
+
+.cam-dot {
+    position: absolute;
     color: white;
-    padding: 9px 20px;
+    top: 0%;
+    left: 50%;
+    background-color: white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 7px;
+    border: 1px solid gray;
+    box-shadow: 1px 2px #888888;
 }
-
-/* Utility Classes */
-.h-primary{
-    font-family: ' ',  ; 
-    font-size: 3.8rem;
-    padding: 12px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-.h-secondary{
-    font-family: ' ',  ;
-    font-size: 2.3rem;
-    padding: 12px;
-}
-
-.btn{
-    padding: 7px;
-    border: 2px solid white;
-    /* background-color: rgb(19, 157, 182); */
-    /* color: white; */
-    margin: 23px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    cursor:pointer;
-    justify-content: center;
-    align-items: center;
-    font-style: none;
-}
-
-.center{
+footer {
     text-align: center;
-    padding: 18px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
 }
-#contacttta{
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    /* z-index: -1; */
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    z-index: -1;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+  #contacttta{
     /* margin: 20px 10%; */
     display: flex;
     /* margin-bottom: 30px; */
@@ -286,10 +172,11 @@ footer{
 }
 
 #contacttta a{
-    color: white;
+    color: rgb(47, 47, 47);
     text-decoration: none;
     /* height: 100vh; */
     padding: 20px 33%;
+    
     
 }
 .oneline{
@@ -298,109 +185,16 @@ footer{
 #contacttta a img{
     padding: 0 20px;
 }
-/* 
-#ques{
-    display: flex;
-}
-.ques1{
-    /* border: 2px solid black; 
-    border-radius: 60px 0 60px 0;
-    width: 600px;
-    height: 600px;
-    margin: auto;
-    background-image: url(/img/whatallastra.jpg) ;
-    background-repeat:no-repeat;
-    background-size: cover;
+
+.h-primary{
+  font-family: ' ',  ; 
+  font-size: 3.8rem;
+  padding: 12px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
-.ques2{
-    
-    /* border: 2px solid black; 
-    border-radius: 60px 0 60px 0;
-    width: 600px;
-    height: 600px;
-    margin: auto;
-    background-image: url(/img/whatall.jpg) ;
-    /* background-repeat:no-repeat; 
-    background-size: cover;
-}
-
-.blank{
-    opacity: 0;
-} */
-
-#que{
-    display: flex;
-    flex-direction: row;
-}
-.ques{
-    width: 600px;
-    height: 600px;
-    display: inline-flex;
-    /* flex-direction:unset; */
-    justify-content: center;
-    margin: auto;
-}
-
-.blank{
-    border-radius: 0 60px 0 60px;
-    margin: 10px 20px;
-
-}
-
- .box a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-
-
-@keyframes rone {
-    0% {
-        transform: translateX(-1600px);
-        opacity: 0%;
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 100%;
-    }
-}
-
-
-@keyframes rtwo {
-    0% {
-        transform: translateX(1600px);
-        opacity: 0%;
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 100%;
-    }
-}
-
-.rt{ 
-animation: rone;
-animation-duration: 2s;
-}
-
-.lt{
-animation: rtwo;
-animation-duration: 3s;
-}
-
-
-.WASH1 {
-   
-    font-size: xx-large;
-    font-weight: bolder;
-    text-decoration:solid;
-}
-
-.chotabhai {
-    font-size: larger;
-    font-weight:500;
-  
+.center{
+  text-align: center;
+  padding: 18px;
 }
