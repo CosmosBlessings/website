@@ -1,0 +1,53 @@
+
+
+body {
+    /* To make the bubbly background span the whole page */
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 50% 50%, #c8ecf5 40%, #c0ebf9 45%, #b8e8fd 50%, #b0e4fb 55%, #a8e0f7 60%, #9decf3 65%, #95ceee 70%, #8bdad9 75%, #81cec4 80%, #77cddd 85%, #6dcace 90%, #63bab8 95%, #59a8ad 100%);
+    /* Add a subtle parallax effect */
+    background-attachment: fixed;
+}
+
+.bubble-container {
+    /* Center the text both vertically and horizontally */
+    /* position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%); */
+    text-align: center;
+    text-decoration: none;
+}
+
+.bubble-text {
+    /* Style the text to have a bubbly appearance */
+    display: inline-block;
+    padding: 50px 50px;
+    margin: 30px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.bubble-text:hover {
+    /* Change text color on hover */
+    /* background-color: #ff6347; */
+    box-shadow: inset 0px 1px 45px 2px #26bf47
+}
+
+/* Position bubbles in 2 lines */
+.bubble-text:nth-of-type(n+6) {
+    margin-top: 30px;
+}
+
+
+.non{
+    text-decoration: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
